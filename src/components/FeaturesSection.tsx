@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Brain, Users, ScrollText, Map, Calendar, BookOpen } from "lucide-react";
 
