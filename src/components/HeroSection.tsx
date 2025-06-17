@@ -1,25 +1,23 @@
-
 import { Button } from "@/components/ui/button";
 import { ScrollText, Sparkles, Users, Zap } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/lovable-uploads/563e1d34-2237-4ec9-bf83-b6b999b25037.png')`,
-        }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url('/lovable-uploads/563e1d34-2237-4ec9-bf83-b6b999b25037.png')`
+    }}>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
       </div>
       
       {/* Floating Particles */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-fantasy-gold rounded-full animate-float opacity-60"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-fantasy-sage rounded-full animate-float opacity-80" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-fantasy-gold rounded-full animate-float opacity-50" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-fantasy-sage rounded-full animate-float opacity-80" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-fantasy-gold rounded-full animate-float opacity-50" style={{
+        animationDelay: '2s'
+      }}></div>
       </div>
       
       {/* Content */}
@@ -27,7 +25,7 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Title */}
           <h1 className="font-cinzel text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
-            <span className="block text-fantasy-gold animate-glow">PATHFINDER</span>
+            <span className="block text-fantasy-gold animate-glow">Codex Anima</span>
             <span className="text-4xl md:text-5xl font-semibold">AI WORLD BUILDER</span>
           </h1>
           
@@ -54,18 +52,11 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-fantasy-gold hover:bg-fantasy-gold-dark text-fantasy-brown font-cinzel font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
-            >
+            <Button size="lg" className="bg-fantasy-gold hover:bg-fantasy-gold-dark text-fantasy-brown font-cinzel font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl">
               <Zap className="w-5 h-5 mr-2" />
               LAUNCH YOUR CAMPAIGN
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-fantasy-parchment text-fantasy-parchment hover:bg-fantasy-parchment hover:text-fantasy-brown font-cinzel font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 backdrop-blur-sm"
-            >
+            <Button variant="outline" size="lg" className="border-2 border-fantasy-parchment text-fantasy-parchment hover:bg-fantasy-parchment hover:text-fantasy-brown font-cinzel font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 backdrop-blur-sm">
               Watch Demo
             </Button>
           </div>
@@ -83,8 +74,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
