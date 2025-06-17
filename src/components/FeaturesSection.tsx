@@ -42,8 +42,16 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-fantasy-sage/10 to-fantasy-parchment">
-      <div className="container mx-auto px-6">
+    <div className="relative py-20 min-h-screen flex items-center overflow-hidden">
+      {/* Background Image for Parallax */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed" 
+        style={{ backgroundImage: `url('https://pftpziyewdkrwxffwgyi.supabase.co/storage/v1/object/public/boltbadge//image2.png')` }}
+      >
+        <div className="absolute inset-0 bg-fantasy-parchment/50 backdrop-blur-[2px]"></div>
+      </div>
+
+      <div className="relative z-10 container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-cinzel text-4xl md:text-5xl font-bold text-fantasy-brown mb-6">
             Forge Legendary Campaigns
@@ -91,7 +99,7 @@ const FeaturesSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
