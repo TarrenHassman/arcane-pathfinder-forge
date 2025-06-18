@@ -26,7 +26,7 @@ const HeroSection = () => {
           {/* Title */}
           <h1 className="font-cinzel text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
             <span className="block text-fantasy-gold animate-glow">Codex Anima</span>
-            <span className="text-4xl md:text-5xl font-semibold">AI WORLD BUILDER</span>
+            <span className="text-4xl md:text-5xl font-semibold">AI Driven Worlds</span>
           </h1>
           
           {/* Subtitle */}
