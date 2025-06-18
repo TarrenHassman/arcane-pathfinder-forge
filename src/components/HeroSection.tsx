@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ScrollText, Sparkles, Users, Zap } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
-
 const HeroSection = () => {
   const isMobile = useIsMobile();
-
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
@@ -60,21 +58,17 @@ const HeroSection = () => {
               <Zap className="w-5 h-5 mr-2" />
               LAUNCH YOUR CAMPAIGN
             </Button>
-            <Button variant="outline" size="lg" className="border-2 border-fantasy-parchment hover:bg-fantasy-parchment font-cinzel font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 backdrop-blur-sm text-[#4a371e]">
-              Watch Demo
-            </Button>
+            
           </div>
 
         </div>
         
         {/* Scroll Indicator */}
-        {!isMobile && (
-          <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {!isMobile && <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="w-6 h-10 border-2 border-fantasy-parchment/50 rounded-full p-1">
               <div className="w-1 h-3 bg-fantasy-parchment/50 rounded-full mx-auto animate-pulse"></div>
             </div>
-          </div>
-        )}
+          </div>}
       </div>
     </section>;
 };
