@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Crown, Zap, Gift } from "lucide-react";
-
 const CTASection = () => {
-  return (
-    <section className="py-20 bg-gradient-to-b from-fantasy-brown/90 to-fantasy-brown relative overflow-hidden">
+  return <section className="py-20 bg-gradient-to-b from-fantasy-brown/90 to-fantasy-brown relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-32 h-32 border border-fantasy-gold/30 rounded-full"></div>
@@ -53,10 +51,7 @@ const CTASection = () => {
               <p className="text-fantasy-brown-dark mb-6">
                 Start creating your epic adventure right now
               </p>
-              <Button 
-                size="lg" 
-                className="bg-fantasy-brown hover:bg-fantasy-brown-dark text-fantasy-parchment font-cinzel font-semibold px-8 py-3 rounded-full transition-all duration-300 w-full"
-              >
+              <Button size="lg" className="bg-fantasy-brown hover:bg-fantasy-brown-dark text-fantasy-parchment font-cinzel font-semibold px-8 py-3 rounded-full transition-all duration-300 w-full">
                 <Zap className="w-5 h-5 mr-2" />
                 START FREE TRIAL
               </Button>
@@ -85,20 +80,11 @@ const CTASection = () => {
         {/* Main CTA Buttons */}
         <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button 
-              size="lg" 
-              className="bg-fantasy-gold hover:bg-fantasy-gold-dark text-fantasy-brown font-cinzel font-semibold text-lg px-12 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
-            >
+            <Button size="lg" className="bg-fantasy-gold hover:bg-fantasy-gold-dark text-fantasy-brown font-cinzel font-semibold text-lg px-12 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl">
               <Zap className="w-6 h-6 mr-2" />
               START YOUR EPIC CAMPAIGN
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-fantasy-parchment text-fantasy-parchment hover:bg-fantasy-parchment hover:text-fantasy-brown font-cinzel font-semibold text-lg px-12 py-4 rounded-full transition-all duration-300"
-            >
-              Schedule Demo
-            </Button>
+            
           </div>
           
           <p className="text-fantasy-parchment/70 text-sm">
@@ -106,8 +92,6 @@ const CTASection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;

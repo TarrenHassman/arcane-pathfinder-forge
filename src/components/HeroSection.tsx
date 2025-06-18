@@ -52,11 +52,11 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-fantasy-gold hover:bg-fantasy-gold-dark text-fantasy-brown font-cinzel font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl">
+            <Button size="lg" className="hover:bg-fantasy-gold-dark font-cinzel font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl text-[#2a1e0d] bg-[#eeb62c]">
               <Zap className="w-5 h-5 mr-2" />
               LAUNCH YOUR CAMPAIGN
             </Button>
-            <Button variant="outline" size="lg" className="border-2 border-fantasy-parchment text-fantasy-parchment hover:bg-fantasy-parchment hover:text-fantasy-brown font-cinzel font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 backdrop-blur-sm">
+            <Button variant="outline" size="lg" className="border-2 border-fantasy-parchment hover:bg-fantasy-parchment font-cinzel font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 backdrop-blur-sm text-[#4a371e]">
               Watch Demo
             </Button>
           </div>
