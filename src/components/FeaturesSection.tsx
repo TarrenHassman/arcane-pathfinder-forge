@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Brain, Users, ScrollText, Map, Calendar, BookOpen } from "lucide-react";
-
+import WaitlistForm from "./WaitlistForm"
 const FeaturesSection = () => {
   const features = [
     {
@@ -42,7 +42,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="relative py-20 min-h-screen flex items-center overflow-hidden">
+    <div className="relative py-20 min-h-lvh flex items-center overflow-hidden">
       {/* Background Image for Parallax */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed" 
@@ -85,7 +85,9 @@ const FeaturesSection = () => {
             </Card>
           ))}
         </div>
-
+    <div className="mt-16">
+          <WaitlistForm />
+        </div>
         {/* Feature Highlight */}
         <div className="mt-16 text-center">
           <div className="bg-fantasy-gold/10 border-2 border-fantasy-gold/30 rounded-2xl p-8 max-w-4xl mx-auto scroll-shadow">
