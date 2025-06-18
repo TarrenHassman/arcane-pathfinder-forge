@@ -63,7 +63,7 @@ const HeroSection = () => {
           
           {/* Trust Indicators */}
           <div className="mt-12 text-fantasy-parchment/80 text-sm">
-            <p>Trusted by 10,000+ Game Masters worldwide</p>
+            
           </div>
         </div>
         
