@@ -1,50 +1,43 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
-import { Resend } from "npm:resend@2.0.0";
-
+import { Resend } from "npm:resend@4.6.0";
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
-
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type"
 };
-
-interface WaitlistRequest {
-  email: string;
-}
-
-const handler = async (req: Request): Promise<Response> => {
+const handler = async (req)=>{
   // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
-    return new Response(null, { headers: corsHeaders });
+    return new Response(null, {
+      headers: corsHeaders
+    });
   }
-
   try {
-    const { email }: WaitlistRequest = await req.json();
-
+    const { email } = await req.json();
     if (!email || !email.includes('@')) {
-      return new Response(
-        JSON.stringify({ error: "Valid email is required" }),
-        {
-          status: 400,
-          headers: { "Content-Type": "application/json", ...corsHeaders },
+      return new Response(JSON.stringify({
+        error: "Valid email is required"
+      }), {
+        status: 400,
+        headers: {
+          "Content-Type": "application/json",
+          ...corsHeaders
         }
-      );
+      });
     }
-
     console.log("Adding email to waitlist:", email);
-
     // Add contact to Resend audience
     const contactResponse = await resend.contacts.create({
       email: email,
-      audienceId: "78c9e0c1-200c-4b35-9f19-cd3b7eae6dfe", // You'll need to replace this with your actual audience ID
+      audienceId: "8da0cc0d-b4ed-40e7-aa11-f19337a7fbf8"
     });
-
     console.log("Contact created:", contactResponse);
-
     // Send welcome email
     const emailResponse = await resend.emails.send({
-      from: "Codex Anima <onboarding@resend.dev>",
-      to: [email],
+      from: "Codex Anima <onboarding@codexanima.tech>",
+      to: [
+        email
+      ],
       subject: "Welcome to the Codex Anima Waitlist!",
       html: `
         <div style="max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif; background: linear-gradient(135deg, #2a1e0d 0%, #1a1409 100%); color: #f4f1e8; padding: 40px 20px;">
@@ -83,44 +76,43 @@ const handler = async (req: Request): Promise<Response> => {
             </p>
           </div>
         </div>
-      `,
+      `
     });
-
     console.log("Welcome email sent:", emailResponse);
-
-    return new Response(
-      JSON.stringify({ 
-        success: true, 
-        message: "Successfully joined waitlist!",
-        contactId: contactResponse.data?.id 
-      }),
-      {
-        status: 200,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
+    return new Response(JSON.stringify({
+      success: true,
+      message: "Successfully joined waitlist!",
+      contactId: contactResponse.data?.id
+    }), {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json",
+        ...corsHeaders
       }
-    );
-  } catch (error: any) {
+    });
+  } catch (error) {
     console.error("Error in join-waitlist function:", error);
-    
     // Handle specific Resend errors
     if (error.message?.includes('Contact already exists')) {
-      return new Response(
-        JSON.stringify({ error: "You're already on our waitlist!" }),
-        {
-          status: 409,
-          headers: { "Content-Type": "application/json", ...corsHeaders },
+      return new Response(JSON.stringify({
+        error: "You're already on our waitlist!"
+      }), {
+        status: 409,
+        headers: {
+          "Content-Type": "application/json",
+          ...corsHeaders
         }
-      );
+      });
     }
-    
-    return new Response(
-      JSON.stringify({ error: error.message || "Failed to join waitlist" }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
+    return new Response(JSON.stringify({
+      error: error.message || "Failed to join waitlist"
+    }), {
+      status: 500,
+      headers: {
+        "Content-Type": "application/json",
+        ...corsHeaders
       }
-    );
+    });
   }
 };
-
 serve(handler);
