@@ -20,11 +20,11 @@ const HeroContent = () => {
           </div>
           <div className="flex items-center bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 border border-fantasy-gold/30">
             <ScrollText className="w-5 h-5 text-fantasy-gold mr-2" />
-            <span className="text-fantasy-parchment">Dynamic Quests</span>
+            <span className="text-fantasy-parchment">Map Creator</span>
           </div>
           <div className="flex items-center bg-black/30 backdrop-blur-sm rounded-full px-4 py-2 border border-fantasy-gold/30">
             <Sparkles className="w-5 h-5 text-fantasy-gold mr-2" />
-            <span className="text-fantasy-parchment">World Generation</span>
+            <span className="text-fantasy-parchment">Automated Mechanics</span>
           </div>
         </div>
 
