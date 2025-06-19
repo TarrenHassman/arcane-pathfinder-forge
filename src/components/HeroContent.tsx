@@ -1,20 +1,16 @@
 import { ScrollText, Sparkles, Users } from "lucide-react";
 import WaitlistForm from "./WaitlistForm";
-
 const HeroContent = () => {
-  return (
-    <div className="relative z-10 container mx-auto px-6 text-center">
+  return <div className="relative z-10 container mx-auto px-6 text-center">
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h1 className="font-cinzel text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
           <span className="block text-fantasy-gold animate-glow">Codex Anima</span>
-          <span className="text-4xl md:text-5xl font-semibold">AI Driven Worlds</span>
+          <span className="text-4xl md:text-5xl font-semibold">Bring Your Worlds To Life</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-fantasy-parchment mb-8 font-crimson leading-relaxed">
-          Dynamic storytelling and gameplay from NPC AI agents
-        </p>
+        <p className="text-xl md:text-2xl text-fantasy-parchment mb-8 font-crimson leading-relaxed">Dynamic storytelling and gameplay with NPC AI agents</p>
 
         {/* Feature Pills */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
@@ -41,8 +37,6 @@ const HeroContent = () => {
           Be the first to experience the future of tabletop gaming
         </p>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroContent;
