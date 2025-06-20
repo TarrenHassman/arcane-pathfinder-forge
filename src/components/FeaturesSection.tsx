@@ -18,13 +18,13 @@ const FeaturesSection = () => {
     {
       icon: Map,
       title: "Interactive World Maps",
-      description: "Build stunning fantasy worlds with interconnected locations, hidden secrets, and environmental storytelling. Share maps with players and track their journeys.",
+      description: "Build stunning fantasy worlds and maps with interconnected locations, hidden secrets, and environmental storytelling. One cohesive map with multiple zoom levels for continents, regions, cities, and more.",
       color: "fantasy-brown"
     },
     {
       icon: Calendar,
       title: "Session Management",
-      description: "Modern Scheduling Software for planning and hosting sessions with friends and strangers, easy note taking and session summaries with an AI assistant to never miss details again",
+      description: "Easily plan and host sessions with friends and strangers. Automatic note taking and session summaries with an AI assistant to never miss details again",
       color: "fantasy-gold"
     },
     {
