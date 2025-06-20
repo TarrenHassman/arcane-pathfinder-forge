@@ -5,8 +5,8 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: Brain,
-      title: "AI NPC Generation",
-      description: "Create rich, memorable NPCs with detailed backstories, motivations, and unique personalities in seconds. Each character comes with voice patterns, mannerisms, and plot hooks.",
+      title: "AI Assisted NPCs",
+      description: "Enhance your characters with AI chat assistant, initial image generation, and AI voices / voice modulation",
       color: "fantasy-gold"
     },
     {
@@ -23,14 +23,14 @@ const FeaturesSection = () => {
     },
     {
       icon: Calendar,
-      title: "Session Tracking",
-      description: "Keep detailed records of every session with automatic note-taking, player decisions, and story developments. Never lose track of plot threads again.",
+      title: "Session Management",
+      description: "Modern Scheduling Software for planning and hosting sessions with friends and strangers, easy note taking and session summaries with an AI assistant to never miss details again",
       color: "fantasy-gold"
     },
     {
       icon: BookOpen,
       title: "Lore Management",
-      description: "Organize your world's history, cultures, religions, and legends in an intuitive knowledge base. AI helps maintain consistency across your entire campaign.",
+      description: "Organize your world's history, cultures, religions, and legends in an intuitive knowledge base. Never have conflicting timelines again",
       color: "fantasy-sage"
     },
     {
