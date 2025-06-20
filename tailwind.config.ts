@@ -67,7 +67,7 @@ export default {
 					'sage-dark': '#6B8A4D',
 					'sage-light': '#A4C584',
 					brown: '#8B4513',
-					'brown-dark': '#654321',
+					'brown-dark': '#2C1810',
 					'brown-light': '#A0522D',
 					parchment: '#F5E6D3',
 					'parchment-dark': '#E8D5B7',

@@ -53,7 +53,7 @@ const FeaturesSection = () => {
 
       <div className="relative z-10 container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-cinzel text-4xl md:text-5xl font-bold text-fantasy-brown mb-6">
+          <h2 className="font-cinzel text-4xl md:text-5xl font-bold text-fantasy-brown-dark mb-6">
             Forge Legendary Campaigns
           </h2>
           <p className="text-xl text-fantasy-brown-dark max-w-3xl mx-auto leading-relaxed">
@@ -73,7 +73,7 @@ const FeaturesSection = () => {
                 <div className={`w-16 h-16 bg-fantasy-${feature.color}/20 rounded-full flex items-center justify-center mx-auto mb-4`}>
                   <feature.icon className={`w-8 h-8 text-fantasy-${feature.color}`} />
                 </div>
-                <CardTitle className="font-cinzel text-xl font-semibold text-fantasy-brown">
+                <CardTitle className="font-cinzel text-xl font-semibold text-fantasy-brown-dark">
                   {feature.title}
                 </CardTitle>
               </CardHeader>
@@ -91,7 +91,7 @@ const FeaturesSection = () => {
         {/* Feature Highlight */}
         <div className="mt-16 text-center">
           <div className="bg-fantasy-gold/10 border-2 border-fantasy-gold/30 rounded-2xl p-8 max-w-4xl mx-auto scroll-shadow">
-            <h3 className="font-cinzel text-2xl font-semibold text-fantasy-brown mb-4">
+            <h3 className="font-cinzel text-2xl font-semibold text-fantasy-brown-dark mb-4">
               ✨ Coming Soon: Real-time AI Dungeon Master
             </h3>
             <p className="text-fantasy-brown-dark text-lg leading-relaxed">
