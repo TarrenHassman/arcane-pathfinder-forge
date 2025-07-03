@@ -58,7 +58,6 @@ export type Database = {
           campaign_id: string | null
           class: string
           created_at: string | null
-          description: string | null
           hp_current: number
           hp_max: number
           id: string
@@ -68,7 +67,6 @@ export type Database = {
           notes: string | null
           race: string
           skills: Json
-          stats: Json | null
           updated_at: string | null
           user_id: string | null
         }
@@ -77,7 +75,6 @@ export type Database = {
           campaign_id?: string | null
           class: string
           created_at?: string | null
-          description?: string | null
           hp_current: number
           hp_max: number
           id?: string
@@ -87,7 +84,6 @@ export type Database = {
           notes?: string | null
           race: string
           skills?: Json
-          stats?: Json | null
           updated_at?: string | null
           user_id?: string | null
         }
@@ -96,7 +92,6 @@ export type Database = {
           campaign_id?: string | null
           class?: string
           created_at?: string | null
-          description?: string | null
           hp_current?: number
           hp_max?: number
           id?: string
@@ -106,7 +101,6 @@ export type Database = {
           notes?: string | null
           race?: string
           skills?: Json
-          stats?: Json | null
           updated_at?: string | null
           user_id?: string | null
         }
@@ -719,7 +713,7 @@ export type Database = {
     Functions: {
       add_tokens: {
         Args: { user_id: string; amount: number }
-        Returns: number
+        Returns: undefined
       }
     }
     Enums: {

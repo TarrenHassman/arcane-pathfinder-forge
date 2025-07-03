@@ -6,44 +6,38 @@ const FeaturesSection = () => {
     {
       icon: Brain,
       title: "AI Assisted NPCs",
-      description: "Create rich, detailed characters with comprehensive stat blocks, appearance details, and ability scores. Generate compelling backstories and track character relationships across your campaigns.",
-      color: "fantasy-gold",
-      image: "/lovable-uploads/1ed634db-78de-4fa8-a3f0-6ee41a97ab0b.png"
+      description: "Enhance your characters with AI chat assistant, initial image generation, and AI voices / voice modulation",
+      color: "fantasy-gold"
     },
     {
       icon: ScrollText,
       title: "Dynamic Questlines",
       description: "Generate interconnected story arcs that adapt to your party's choices. AI creates branching narratives with multiple outcomes and surprising plot twists.",
-      color: "fantasy-sage",
-      image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843"
+      color: "fantasy-sage"
     },
     {
       icon: Map,
       title: "Interactive World Maps",
-      description: "Build stunning fantasy worlds with multi-layered maps featuring different zoom levels. Create detailed regions, continents, and local areas with interconnected locations and environmental storytelling.",
-      color: "fantasy-brown",
-      image: "/lovable-uploads/a3998da5-0540-4dd6-ad7d-865480302ef4.png"
+      description: "Build stunning fantasy worlds and maps with interconnected locations, hidden secrets, and environmental storytelling. One cohesive map with multiple zoom levels for continents, regions, cities, and more.",
+      color: "fantasy-brown"
     },
     {
       icon: Calendar,
       title: "Session Management",
       description: "Easily plan and host sessions with friends and strangers. Automatic note taking and session summaries with an AI assistant to never miss details again",
-      color: "fantasy-gold",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
+      color: "fantasy-gold"
     },
     {
       icon: BookOpen,
       title: "Lore Management",
-      description: "Organize your world's history across ages and eras with an intuitive timeline system. Track civilizations, events, and cultural developments to maintain consistent world-building.",
-      color: "fantasy-sage",
-      image: "/lovable-uploads/8aad9547-b72a-40cf-8516-0174e4208ebf.png"
+      description: "Organize your world's history, cultures, religions, and legends in an intuitive knowledge base. Never have conflicting timelines again",
+      color: "fantasy-sage"
     },
     {
       icon: Users,
       title: "Player Collaboration",
       description: "Invite players to contribute to world-building, share character backstories, and access relevant information. Build your world together.",
-      color: "fantasy-brown",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb"
+      color: "fantasy-brown"
     }
   ];
 
@@ -76,13 +70,6 @@ const FeaturesSection = () => {
               style={{animationDelay: `${index * 0.1}s`}}
             >
               <CardHeader className="text-center pb-4">
-                <div className="w-full h-48 mb-4 rounded-lg overflow-hidden">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
                 <div className={`w-16 h-16 bg-fantasy-${feature.color}/20 rounded-full flex items-center justify-center mx-auto mb-4`}>
                   <feature.icon className={`w-8 h-8 text-fantasy-${feature.color}`} />
                 </div>
