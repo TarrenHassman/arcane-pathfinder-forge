@@ -54,7 +54,7 @@ const FeaturesSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed" 
         style={{ backgroundImage: `url('https://pftpziyewdkrwxffwgyi.supabase.co/storage/v1/object/public/boltbadge//image2.png')` }}
       >
-        <div className="absolute inset-0 bg-fantasy-parchment/70 backdrop-blur-[8px]"></div>
+        <div className="absolute inset-0 bg-fantasy-parchment/50 backdrop-blur-[2px]"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-6">
