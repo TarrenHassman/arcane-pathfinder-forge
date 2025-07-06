@@ -18,15 +18,6 @@ export default {
 			}
 		},
 		extend: {
-			textShadow: {
-        sm: '0 1px 2px var(--tw-shadow-color)',
-        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
-        md: '0 4px 6px var(--tw-shadow-color)',
-        lg: '0 8px 16px var(--tw-shadow-color)',
-        // You can define your own custom shadows
-        'white': '1px 1px 2px rgba(255, 255, 255, 0.8)',
-        'black': '1px 1px 2px rgb(0, 0, .8)',
-      },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
