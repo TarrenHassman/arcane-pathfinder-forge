@@ -15,7 +15,7 @@ const FeaturesSection = () => {
       title: "Dynamic Questlines",
       description: "Generate interconnected story arcs that adapt to your party's choices. AI creates branching narratives with multiple outcomes and surprising plot twists.",
       color: "fantasy-sage",
-      image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843"
+      image: "/lovable-uploads/b8fc3391-9e58-450a-9ee1-d40bca71dde9.png"
     },
     {
       icon: Map,
