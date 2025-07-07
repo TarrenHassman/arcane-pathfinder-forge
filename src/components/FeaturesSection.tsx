@@ -4,16 +4,16 @@ import WaitlistForm from "./WaitlistForm"
 const FeaturesSection = () => {
   const features = [
     {
-      icon: Brain,
-      title: "AI Assisted NPCs",
-      description: "Create rich, detailed characters with comprehensive stat blocks, appearance details, and ability scores. Generate compelling backstories and track character relationships across your campaigns.",
+      icon: ScrollText,
+      title: "Detailed Character Sheets",
+      description: "Create rich, detailed characters with comprehensive stat blocks, appearance details, and ability scores. Generate Portraits and Voices using AI, use voice modulation for NPCs",
       color: "fantasy-gold",
       image: "/lovable-uploads/1ed634db-78de-4fa8-a3f0-6ee41a97ab0b.png"
     },
     {
-      icon: ScrollText,
-      title: "Dynamic Questlines",
-      description: "Generate interconnected story arcs that adapt to your party's choices. AI creates branching narratives with multiple outcomes and surprising plot twists.",
+      icon: Brain,
+      title: "NPC Agents",
+      description: "Allow NPCs to play like Players coming up with actions and making rolls to do so.",
       color: "fantasy-sage",
       image: "/lovable-uploads/b8fc3391-9e58-450a-9ee1-d40bca71dde9.png"
     },
@@ -27,7 +27,7 @@ const FeaturesSection = () => {
     {
       icon: Calendar,
       title: "Session Management",
-      description: "Easily plan and host sessions with friends and strangers. Automatic note taking and session summaries with an AI assistant to never miss details again",
+      description: "Host friendly or paid Sessions, easily list availability and find Sessions that match your time",
       color: "fantasy-gold",
       image: "/lovable-uploads/0fa484c8-9ccb-42d3-a9e9-07cfd43613ca.png"
     },
