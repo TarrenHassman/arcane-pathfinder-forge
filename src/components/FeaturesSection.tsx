@@ -13,7 +13,7 @@ const FeaturesSection = () => {
     {
       icon: Brain,
       title: "NPC Agents",
-      description: "Allow NPCs to play like Players coming up with actions and making rolls to do so.",
+      description: "Allow NPCs to progress their goals off screen while you GM for the players, letting plots unfold in the background.",
       color: "fantasy-sage",
       image: "/lovable-uploads/b8fc3391-9e58-450a-9ee1-d40bca71dde9.png"
     },
