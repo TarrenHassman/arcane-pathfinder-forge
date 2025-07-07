@@ -22,7 +22,7 @@ const FeaturesSection = () => {
       title: "Interactive World Maps",
       description: "Build stunning fantasy worlds with multi-layered maps featuring different zoom levels. Create detailed regions, continents, and local areas with interconnected locations and environmental storytelling.",
       color: "fantasy-brown",
-      image: "/lovable-uploads/a3998da5-0540-4dd6-ad7d-865480302ef4.png"
+      image: "/lovable-uploads/ac842098-7631-40e3-8087-a85abf4c31e9.png"
     },
     {
       icon: Calendar,
