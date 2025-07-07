@@ -29,7 +29,7 @@ const FeaturesSection = () => {
       title: "Session Management",
       description: "Easily plan and host sessions with friends and strangers. Automatic note taking and session summaries with an AI assistant to never miss details again",
       color: "fantasy-gold",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
+      image: "/lovable-uploads/0fa484c8-9ccb-42d3-a9e9-07cfd43613ca.png"
     },
     {
       icon: BookOpen,
