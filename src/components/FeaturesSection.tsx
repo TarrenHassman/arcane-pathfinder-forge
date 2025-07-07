@@ -43,7 +43,7 @@ const FeaturesSection = () => {
       title: "Player Collaboration",
       description: "Invite players to contribute to world-building, share character backstories, and access relevant information. Build your world together.",
       color: "fantasy-brown",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb"
+      image: "/lovable-uploads/8aad9547-b72a-40cf-8516-0174e4208ebf.png"
     }
   ];
 
