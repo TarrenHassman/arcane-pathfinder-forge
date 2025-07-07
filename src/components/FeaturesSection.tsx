@@ -41,9 +41,9 @@ const FeaturesSection = () => {
     {
       icon: Users,
       title: "Player Collaboration",
-      description: "Invite players to contribute to world-building, share character backstories, and access relevant information. Build your world together.",
+      description: "Invite players to contribute to world-building, share character backstories, and access relevant information. Characters should feel like the truly lived in the world",
       color: "fantasy-brown",
-      image: "/lovable-uploads/8aad9547-b72a-40cf-8516-0174e4208ebf.png"
+      image: "/lovable-uploads/tempPlayerCollab.png"
     }
   ];
 
