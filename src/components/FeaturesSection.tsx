@@ -15,7 +15,7 @@ const FeaturesSection = () => {
       title: "NPC Agents",
       description: "Allow NPCs to progress their goals off screen while you GM for the players, letting plots unfold in the background.",
       color: "fantasy-sage",
-      image: "/lovable-uploads/b8fc3391-9e58-450a-9ee1-d40bca71dde9.png"
+      image: "/lovable-uploads/agentTools.png"
     },
     {
       icon: Map,
@@ -101,18 +101,7 @@ const FeaturesSection = () => {
     <div className="mt-16">
           <WaitlistForm />
         </div>
-        {/* Feature Highlight */}
-        <div className="mt-16 text-center">
-          <div className="bg-fantasy-gold/10 border-2 border-fantasy-gold/30 rounded-2xl p-8 max-w-4xl mx-auto scroll-shadow">
-            <h3 className="font-cinzel text-2xl font-semibold text-fantasy-brown-dark mb-4">
-              ✨ Coming Soon: Real-time AI Dungeon Master
-            </h3>
-            <p className="text-fantasy-brown-dark text-lg leading-relaxed">
-              Experience the future of tabletop gaming with an AI that can run entire sessions, 
-              react to player choices in real-time, and create emergent storylines that surprise even you.
-            </p>
-          </div>
-        </div>
+    
       </div>
     </div>
   );
