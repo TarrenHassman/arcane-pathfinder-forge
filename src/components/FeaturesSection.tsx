@@ -12,8 +12,8 @@ const FeaturesSection = () => {
     },
     {
       icon: Brain,
-      title: "NPC Agents",
-      description: "Allow NPCs to progress their goals off screen while you GM for the players, letting plots unfold in the background.",
+      title: "AI DM",
+      description: "Play your character inside your own world. Automated mechanics for dice rolls, saves, and more",
       color: "fantasy-sage",
       image: "/lovable-uploads/agentTools.png"
     },
@@ -40,7 +40,7 @@ const FeaturesSection = () => {
     },
     {
       icon: Users,
-      title: "Player Collaboration",
+      title: "Consistent Character Images",
       description: "Invite players to contribute to world-building, share character backstories, and access relevant information. Characters should feel like the truly lived in the world",
       color: "fantasy-brown",
       image: "/lovable-uploads/tempPlayerCollab.png"
@@ -99,7 +99,44 @@ const FeaturesSection = () => {
           ))}
         </div>
     <div className="mt-16">
-          <WaitlistForm />
+          <WaitlistForm />        </div>
+        
+        <div className="mt-16 grid md:grid-cols-3 gap-8">
+          <Card className="bg-white/80 border-2 border-fantasy-gold/30 shadow-xl">
+            <CardHeader>
+              <CardTitle className="font-cinzel text-xl font-semibold text-fantasy-brown-dark text-center">
+                Basic
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-3xl font-bold text-center mb-4">$5</p>
+              <p className="text-fantasy-brown-dark text-center">Base amount + additional for usage</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="bg-white/80 border-2 border-fantasy-sage/30 shadow-xl">
+            <CardHeader>
+              <CardTitle className="font-cinzel text-xl font-semibold text-fantasy-brown-dark text-center">
+                Creator
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-3xl font-bold text-center mb-4">$15</p>
+              <p className="text-fantasy-brown-dark text-center">Base amount + additional for usage</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="bg-white/80 border-2 border-fantasy-brown/30 shadow-xl">
+            <CardHeader>
+              <CardTitle className="font-cinzel text-xl font-semibold text-fantasy-brown-dark text-center">
+                Professional
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-3xl font-bold text-center mb-4">$50</p>
+              <p className="text-fantasy-brown-dark text-center">Base amount + additional for usage</p>
+            </CardContent>
+          </Card>
         </div>
     
       </div>
