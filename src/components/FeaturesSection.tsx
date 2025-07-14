@@ -12,7 +12,7 @@ const FeaturesSection = () => {
     },
     {
       icon: Brain,
-      title: "AI DM",
+      title: "Automated DM Mechanics",
       description: "Play your character inside your own world. Automated mechanics for dice rolls, saves, and more",
       color: "fantasy-sage",
       image: "/lovable-uploads/agentTools.png"
@@ -41,9 +41,9 @@ const FeaturesSection = () => {
     {
       icon: Users,
       title: "Consistent Character Images",
-      description: "Invite players to contribute to world-building, share character backstories, and access relevant information. Characters should feel like the truly lived in the world",
+      description: "Consistent Characters across scenes for immersive gameplay and storytelling.",
       color: "fantasy-brown",
-      image: "/lovable-uploads/tempPlayerCollab.png"
+      image: "/lovable-uploads/characters.png"
     }
   ];
 
